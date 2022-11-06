@@ -60,18 +60,21 @@ h1 {
     display: flex;
     justify-content: space-evenly;
     position: relative;
+    flex-direction: column;
 }
 .pictures_row2 {
     text-align: center;
     display: flex;
     justify-content: space-evenly;
     position: relative;
+    flex-direction: column;
 }
 .pictures_row3 {
     text-align: center;
     display: flex;
     justify-content: space-evenly;
     position: relative;
+    flex-direction: column;
 }
 
 .travel_instagram_row {
