@@ -1,0 +1,196 @@
+@font-face {
+    font-family: 'Mykola';
+    src: url(./PressStart2P-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main {
+
+    background: url('./img/main-background.jpg') no-repeat;
+    background-position: center center;
+    background-size: cover;
+    border: 5px solid darkblue;
+    position: relative;
+    
+}
+
+h1 {
+    font-family: 'Mykola', cursive;
+    font-weight: 900;
+    font-size: 48px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    /* колір в форматі HEX */
+    color: #c32222;
+    text-align: center;
+    padding-top: 300px;
+}
+
+.main_subtitle {
+    font-weight: 100;
+    font-size: 48px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    /* за допомогою слів  */
+    color: white;
+    text-align: center;
+    display: block;
+}
+
+.pictures {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 1074px;
+}
+
+.pictures_row1 {
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+}
+.pictures_row2 {
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+}
+.pictures_row3 {
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+.travel_instagram_row {
+    display: flex;
+}
+
+.travel_instagram_row img {
+    width: 344px;
+}
+
+.travel_instagram {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.travel_instagram_text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 48px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    position: absolute;
+    top: 45%;
+    left: 24%;
+}
+
+.travel_instagram_text--white {
+    color: white;
+}
+
+.travel_instagram_text--red {
+    color: orangered;
+}
+
+.travel_instagram_mask {
+    width: 1376px;
+    height: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 69px;
+    background-color: black;
+    color: white;
+    width: 1376px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 69px;
+    width: 1376px;
+    /* position: sticky;
+    top:0;
+    backdrop-filter: blur(10px); */
+}
+
+.header_menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+header a {
+    color: black;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    transition: all .6s;
+}
+header a:hover {
+    cursor: pointer;
+    color: white;
+}
+.bage {
+    position: absolute;
+    top: 10px;
+    left: 23px;
+    background-color: yellow;
+    padding: 10px 10px;
+    border-radius: 50px;
+}
+
+@media (min-width: 380px) and (max-width: 431px) {
+   header  {
+    width: 100%;
+   }
+   header a {
+    font-size: 10px;
+   }
+   main {
+    width: 100%;
+   }
+   .main {
+    width: 100%;
+    background: url('./img/mobile/Untitled.png') no-repeat;
+    max-height: 100vh;
+    min-height: 80vh;
+   }
+   h1 {
+    font-size: 26px;
+   }
+   .main_subtitle {
+    font-size: 26px;
+   }
+   .travel_instagram_row img {
+    width: 130px;
+}
+.pictures_row {
+    flex-direction: column;
+}
+}
